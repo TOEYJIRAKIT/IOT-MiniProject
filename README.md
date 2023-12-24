@@ -13,11 +13,12 @@
 ## การออกแบบระบบ
 
 แสดงสถาปัตยกรรระบบ (Systems Architecture)
-![image](https://github.com/TOEYJIRAKIT/IOT-MiniProject/assets/110581279/6aea5e96-0ee4-4126-bf72-1f8abc05cf12)
+![image](https://github.com/TOEYJIRAKIT/IOT-MiniProject/assets/110581279/7c9e642d-8419-4730-a407-67cfb7a40a49)
 
 
 แสดงสถาปัตยกรรมซอฟต์แวร์ (Software Architecture)
-![image](https://github.com/TOEYJIRAKIT/IOT-MiniProject/assets/110581279/40b863a4-cbdf-4434-9d7c-50079e3a5b1b)
+![image](https://github.com/TOEYJIRAKIT/IOT-MiniProject/assets/110581279/da251ea8-d665-45d7-be86-467cf74235ce)
+
 
 ### Data Stucture
 โครงสร้างข้อมูลถูกเก็บด้วย JSON โดยประกอบด้วยข้อมูลดังนี้ uid , studentid , firstname , lastname , position , timestamp , status, id ดังตัวอย่างตามลำดับ ที่ถูกจัดเก็บใน Module ชื่อ users 
