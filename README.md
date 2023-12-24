@@ -11,7 +11,7 @@
 ## การออกแบบระบบ
 ### Data Stucture
 โครงสร้างข้อมูลถูกเก็บด้วย JSON โดยประกอบด้วยข้อมูลดังนี้ uid , studentid , firstname , lastname , position , timestamp , status , id  ดังตัวอย่างตามลำดับ ที่ถูกจัดเก็บใน Module ชื่อ users 
-#### ส่วนของบัตร (CInformation):
+#### โครงสร้างข้อมูล :
 ```json
 {
   "users": [
