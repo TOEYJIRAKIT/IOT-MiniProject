@@ -12,9 +12,12 @@
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วัตถุประสงค์ของโครงการนี้มีดังต่อไปนี้ 1) สร้างตารางเก็บบันทึกข้อมูลการเข้า-ออกโรงเรียนของนักเรียนแสดงผลบนเว็บไซด์ได้ 2) สร้างระบบแจ้งเตือนการเข้า-ออกโรงเรียนของนักเรียนส่งไปยังผู้ปกครองผ่านระบบ LINE Notify ได้
 ## การออกแบบระบบ
 
-แสดงสถาปัตยกรรระบบ พร้อมทั้งอธิบายฟังก์ชันของแต่ละโมดูล 
+แสดงสถาปัตยกรรระบบ(Systems Architecture)
+![image](https://github.com/TOEYJIRAKIT/IOT-MiniProject/assets/110581279/6aea5e96-0ee4-4126-bf72-1f8abc05cf12)
 
-แสดงสถาปัตยกรรมซอฟต์แวร์ พร้อมทั้งอธิบายฟังชั้นของแต่ละโมดูล	 
+
+แสดงสถาปัตยกรรมซอฟต์แวร์(Software Architecture)
+![image](https://github.com/TOEYJIRAKIT/IOT-MiniProject/assets/110581279/40b863a4-cbdf-4434-9d7c-50079e3a5b1b)
 
 ### Data Stucture
 โครงสร้างข้อมูลถูกเก็บด้วย JSON โดยประกอบด้วยข้อมูลดังนี้ uid , studentid , firstname , lastname , position , timestamp , status, id ดังตัวอย่างตามลำดับ ที่ถูกจัดเก็บใน Module ชื่อ users 
@@ -58,7 +61,7 @@
 | id  | รหัสลำดับผู้ใช้  | int   | 1   |
 ## การพัฒนาระบบ
 ### เครื่องมือ
-- ATmega328P WiFi ESP8266+8Mb flash ใช้สำหรับอ่านค่า Sensor และติดตั้งอุปกรณ์ 
+- Arduino UNO+WiFi R3 ATmega328P+ESP8266 Web Server Wifi ใช้สำหรับอ่านค่า Sensor และติดตั้งอุปกรณ์ 
 - RFID Sensor ทำหน้าที่เป็นตัวอ่านบัตรที่สแกนเข้ามา 
 - OLED Display ใช้สำหรับแสดงข้อมูลส่วนตัวของผู้สแกนบัตร
 - Jumper Wire สายไฟใช้สำหรับเชื่อมต่อ Sensor เข้ากับตัวบอร์ด
