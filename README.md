@@ -1,1 +1,1 @@
-# IOT-MiniProject
+# ชื่อโครงการ: ระบบแจ้งเตือนการเข้า-ออกมหาลัย (Attendance System)
