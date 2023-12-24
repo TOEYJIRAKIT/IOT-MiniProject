@@ -12,7 +12,7 @@
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วัตถุประสงค์ของโครงการนี้มีดังต่อไปนี้ 1) สร้างตารางเก็บบันทึกข้อมูลการเข้า-ออกโรงเรียนของนักเรียนแสดงผลบนเว็บไซด์ได้ 2) สร้างระบบแจ้งเตือนการเข้า-ออกโรงเรียนของนักเรียนส่งไปยังผู้ปกครองผ่านระบบ LINE Notify ได้
 ## การออกแบบระบบ
 
-แสดงสถาปัตยกรรระบบ (Systems Architecture)
+แสดงสถาปัตยกรรมระบบ (Systems Architecture)
 ![image](https://github.com/TOEYJIRAKIT/IOT-MiniProject/assets/110581279/7c9e642d-8419-4730-a407-67cfb7a40a49)
 
 
