@@ -10,6 +10,35 @@
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วัตถุประสงค์ของโครงการนี้มีดังต่อไปนี้ 1) สร้างตารางเก็บบันทึกข้อมูลการเข้า-ออกโรงเรียนของนักเรียนแสดงผลบนเว็บไซด์ได้ 2) สร้างระบบแจ้งเตือนการเข้า-ออกโรงเรียนของนักเรียนส่งไปยังผู้ปกครองผ่านระบบ LINE Notify ได้
 ## การออกแบบระบบ
 ### Data Stucture
+โครงสร้างข้อมูลถูกเก็บด้วย JSON โดยประกอบด้วยข้อมูลดังนี้ uid , studentid , firstname , lastname , position , timestamp , status , id  ดังตัวอย่างตามลำดับ ที่ถูกจัดเก็บใน Module ชื่อ users 
+### Data Dictionary
+#### ส่วนของบัตร (CInformation):
+```json
+{
+  "users": [
+    {
+      "uid": "2",
+      "studentid": "64125735",
+      "firstname": "ธนวัฒน์",
+      "lastname": "กองสีสังข์",
+      "position": "นักศึกษา",
+      "timestamp": "20:15:40",
+      "status": "เข้า",
+      "id": 1
+    },
+    {
+      "uid": "2",
+      "studentid": "64102080",
+      "firstname": "จิรกิตติ์",
+      "lastname": "เอียดเหตุ",
+      "position": "นักศึกษา",
+      "timestamp": "20:15:43",
+      "status": "ออก",
+      "id": 2
+    }
+  ]
+}
+```
 ## การพัฒนาระบบ
 ## การทดสอบ
 ## สรุปผลการทดสอบ
