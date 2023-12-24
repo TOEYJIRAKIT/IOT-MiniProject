@@ -10,7 +10,7 @@
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วัตถุประสงค์ของโครงการนี้มีดังต่อไปนี้ 1) สร้างตารางเก็บบันทึกข้อมูลการเข้า-ออกโรงเรียนของนักเรียนแสดงผลบนเว็บไซด์ได้ 2) สร้างระบบแจ้งเตือนการเข้า-ออกโรงเรียนของนักเรียนส่งไปยังผู้ปกครองผ่านระบบ LINE Notify ได้
 ## การออกแบบระบบ
 ### Data Stucture
-โครงสร้างข้อมูลถูกเก็บด้วย JSON โดยประกอบด้วยข้อมูลดังนี้ uid , studentid , firstname , lastname , position , timestamp , status , id  ดังตัวอย่างตามลำดับ ที่ถูกจัดเก็บใน Module ชื่อ users 
+โครงสร้างข้อมูลถูกเก็บด้วย JSON โดยประกอบด้วยข้อมูลดังนี้ id, uid , studentid , firstname , lastname , position , timestamp , status ดังตัวอย่างตามลำดับ ที่ถูกจัดเก็บใน Module ชื่อ users 
 #### โครงสร้างข้อมูล :
 ```json
 {
@@ -26,7 +26,7 @@
       "id": 1
     },
     {
-      "uid": "2",
+      "uid": "3",
       "studentid": "64102080",
       "firstname": "จิรกิตติ์",
       "lastname": "เอียดเหตุ",
@@ -39,6 +39,17 @@
 }
 ```
 ### Data Dictionary
+| Attribute | Description | Data Type | Example |
+|--------------------|--------------------|--------------------|--------------------|
+| id  | รหัสลำดับผู้ใช้  | int   | 1   |
+| uid  |  รหัสประจำผู้ใช้งาน  | String   | 2   |
+| studentid  |รหัสนักเรียน  | String   | 64125735 |   
+| firstname  | ชื่อ  | String   | ธนวัฒน์   |
+| lastname  |  นามสกุล  | String   | กองสีสังข์   |
+| position  |ตำแหน่ง  | String   | นักศึกษา   |
+| timestamp  | เวลา  | String   | 20:15:43   |
+| status  | สถานะ  | String   | เข้า   |
+
 ## การพัฒนาระบบ
 ## การทดสอบ
 ## สรุปผลการทดสอบ
