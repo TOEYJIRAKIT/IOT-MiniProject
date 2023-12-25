@@ -15,16 +15,24 @@
 แสดงสถาปัตยกรรมระบบ (Systems Architecture)
 ![image](https://github.com/TOEYJIRAKIT/IOT-MiniProject/assets/110581279/b21fff0b-52df-42eb-b967-e8df4bcfc9d8)
 
-### Collect Layer ทำหน้าที่รับข้อมูลจาก RFID sensor เพื่อใช้ประมวลผล
-### Process Layer ทำหน้าที่เก็บข้อมูล โดยฐานข้อมูลจะถูกเก็บเป็น Json Server และมีตัวกลางในการเชื่อมต่อกับฝั่ง Web โดยใช้ Flask
-### Frontend Layer ทำหน้าที่แสดงผลต่างๆที่ได้จาก RFID sensor เช่น uid , studentid , firstname , lastname , position , timestamp , status, id เป็นต้น
+#### Collect Layer ทำหน้าที่รับข้อมูลจาก RFID sensor เพื่อใช้ประมวลผล
+#### Process Layer ทำหน้าที่เก็บข้อมูล โดยฐานข้อมูลจะถูกเก็บเป็น Json Server และมีตัวกลางในการเชื่อมต่อกับฝั่ง Web โดยใช้ Flask
+#### Frontend Layer ทำหน้าที่แสดงผลต่างๆที่ได้จาก RFID sensor เช่น uid , studentid , firstname , lastname , position , timestamp , status, id เป็นต้น
 
 แสดงสถาปัตยกรรมซอฟต์แวร์ (Software Architecture)
 ![image](https://github.com/TOEYJIRAKIT/IOT-MiniProject/assets/110581279/27c4a44d-e4de-4dcf-af2b-b90ca1ab6e14)
 
-### Collect Layer ทำหน้าที่รับข้อมูลจาก RFID sensor เพื่อใช้ประมวลผล
-### Process Layer ทำหน้าที่เก็บข้อมูล โดยฐานข้อมูลจะถูกเก็บเป็น Json Server และมีตัวกลางในการเชื่อมต่อกับฝั่ง Web โดยใช้ Flask
-### Frontend Layer ทำหน้าที่แสดงผลต่างๆที่ได้จาก RFID เช่น uid , studentid , firstname , lastname , position , timestamp , status, id เป็นต้น
+#### Collect Layer 
+- Arduino UNO Wifi ใช้ในการรับค่าข้อมูลจาก RFID sensor เพื่อส่งไปให้ NodeMCU 1.0
+- NodeMCU 1.0 ใช้สำหรับในการรับค่าจาก Arduino UNO Wifi และนำส่งข้อมูลที่ได้ไปยัง MQTT
+#### Process Layer 
+- MQTT ใช้รับข้อมูลจาก NodeMCU 1.0 และส่งข้อมูล ไปยัง Flask
+- Flask ใช้รับข้อมูลจาก JSON และส่งไปแสดงผลใน Web
+- JSON ใช้เป็น database ที่ใช้ในการเก็บข้อมูลนักศึกษาที่เข้า-ออก
+#### Frontend Layer 
+- Web แสดงผลผ่านเว็บไซต์ข้อมูลนักศึกษาที่เข้า-ออกจาก Flask ที่ส่งมา
+- LINE Notify ส่งแจ้งเตือนข้อมูลนักศึกษาที่เข้า-ออกไปยังไลน์ผู้ปกครอง
+- OLED Display แสดงผลข้อมูลนักศึกษาที่เข้า-ออกผ่านหน้าจอว่า SUCCESS หรือไม่ถ้าเป็นนักศึกษาที่ไม่รู้จักจะแสดง UNKNOWN
 
 ### Data Stucture
 โครงสร้างข้อมูลถูกเก็บด้วย JSON โดยประกอบด้วยข้อมูลดังนี้ uid , studentid , firstname , lastname , position , timestamp , status, id ดังตัวอย่างตามลำดับ ที่ถูกจัดเก็บใน Module ชื่อ users 
