@@ -17,7 +17,8 @@
 
 
 แสดงสถาปัตยกรรมซอฟต์แวร์ (Software Architecture)
-![image](https://github.com/TOEYJIRAKIT/IOT-MiniProject/assets/110581279/da251ea8-d665-45d7-be86-467cf74235ce)
+![image](https://github.com/TOEYJIRAKIT/IOT-MiniProject/assets/110581279/27c4a44d-e4de-4dcf-af2b-b90ca1ab6e14)
+
 
 
 ### Data Stucture
