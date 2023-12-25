@@ -15,14 +15,16 @@
 แสดงสถาปัตยกรรมระบบ (Systems Architecture)
 ![image](https://github.com/TOEYJIRAKIT/IOT-MiniProject/assets/110581279/b21fff0b-52df-42eb-b967-e8df4bcfc9d8)
 
-#### Collect Layer ทำหน้าที่รับข้อมูลจาก RFID sensor เพื่อใช้ประมวลผล
-#### Process Layer ทำหน้าที่เก็บข้อมูล โดยฐานข้อมูลจะถูกเก็บเป็น Json Server และมีตัวกลางในการเชื่อมต่อกับฝั่ง Web โดยใช้ Flask
-#### Frontend Layer ทำหน้าที่แสดงผลต่างๆที่ได้จาก RFID เช่น uid , studentid , firstname , lastname , position , timestamp , status, id เป็นต้น
+### Collect Layer ทำหน้าที่รับข้อมูลจาก RFID sensor เพื่อใช้ประมวลผล
+### Process Layer ทำหน้าที่เก็บข้อมูล โดยฐานข้อมูลจะถูกเก็บเป็น Json Server และมีตัวกลางในการเชื่อมต่อกับฝั่ง Web โดยใช้ Flask
+### Frontend Layer ทำหน้าที่แสดงผลต่างๆที่ได้จาก RFID sensor เช่น uid , studentid , firstname , lastname , position , timestamp , status, id เป็นต้น
 
 แสดงสถาปัตยกรรมซอฟต์แวร์ (Software Architecture)
 ![image](https://github.com/TOEYJIRAKIT/IOT-MiniProject/assets/110581279/27c4a44d-e4de-4dcf-af2b-b90ca1ab6e14)
 
-
+### Collect Layer ทำหน้าที่รับข้อมูลจาก RFID sensor เพื่อใช้ประมวลผล
+### Process Layer ทำหน้าที่เก็บข้อมูล โดยฐานข้อมูลจะถูกเก็บเป็น Json Server และมีตัวกลางในการเชื่อมต่อกับฝั่ง Web โดยใช้ Flask
+### Frontend Layer ทำหน้าที่แสดงผลต่างๆที่ได้จาก RFID เช่น uid , studentid , firstname , lastname , position , timestamp , status, id เป็นต้น
 
 ### Data Stucture
 โครงสร้างข้อมูลถูกเก็บด้วย JSON โดยประกอบด้วยข้อมูลดังนี้ uid , studentid , firstname , lastname , position , timestamp , status, id ดังตัวอย่างตามลำดับ ที่ถูกจัดเก็บใน Module ชื่อ users 
